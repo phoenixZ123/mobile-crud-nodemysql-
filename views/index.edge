@@ -1,0 +1,39 @@
+@layout('layout.master')
+@section('item')
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+</head>
+<body class=" h-screen">
+<p class="text-center font-bold text-[30px] uppercase">Phone</p>
+<a href="/specifications" class="bg-blue-600 hover:bg-blue-800 active:text-slate-400 p-2 rounded-md ring-1 ring-slate-100 text-white"><span class="animate-ping  absolute inline-flex h-6 w-20  rounded-full bg-sky-400 opacity-75"></span>Phone Specifications</a>
+<a href="/create" class="bg-green-600 p-2 rounded-md text-white hover:bg-green-800 active:text-slate-400">Create</a>
+
+<div class=" rounded-md overflow-hidden mt-5 flex  mx-auto gap-4">
+    @each(b in data)
+    <div class=" h-28 shadow-lg bg-white rounded-md flex justify-center items-center p-3">      
+            <p class=" text-[50px] font-bold flex justify-center items-center">{{b.brand_name}}</p>                
+    </div>
+    @endeach
+</div>
+<div class="w-full h-1 bg-slate-700 mt-3 opacity-35"></div>
+<p class="text-center font-bold text-[30px] uppercase">Laptop</p>
+<a href="/laptop_specifications" class="bg-blue-600 hover:bg-blue-800 active:text-slate-400 p-2 rounded-md ring-1 ring-slate-100 text-white"><span class="animate-ping  absolute inline-flex h-6 w-20  rounded-full bg-sky-400 opacity-75"></span>Laptop Specifications</a>
+<a href="/create_laptop" class="bg-green-600 p-2 rounded-md text-white hover:bg-green-800 active:text-slate-400">Create</a>
+
+<div class=" rounded-md overflow-hidden mt-5 flex  mx-auto gap-4">
+    @each(b in laptop)
+    <div class=" h-28 shadow-lg bg-white rounded-md flex justify-center items-center p-3">      
+            <p class=" text-[50px] font-bold flex justify-center items-center">{{b.brand_name}}</p>                
+    </div>
+    @endeach
+</div>
+
+</body>
+</html>
+@endsection

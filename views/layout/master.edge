@@ -1,0 +1,29 @@
+{{--  <link rel="stylesheet" href="/assets/css/main.css">
+<a href="/">Home</a>
+<a href="/categories">Category</a>
+@!section('content')
+@!section('body')  --}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>CRUD</title>
+</head>
+<body class=" font-serif bg-zinc-300">
+    <div class="max-w-screen-xl mx-auto p-2 sm:p-5 ">
+    <p class="text-[40px] text-center text-green-950 font-bold uppercase">Just Mobile Shop</p>
+
+        {{--  <div class=" grid grid-cols-1 md:grid-cols-4 sm:grid-cols-2 ">
+           @!section('content')
+        </div>  --}}
+        <div class="h-screen">
+            @!section('item')         
+        </div>
+    </div>
+
+</body>
+</html>

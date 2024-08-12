@@ -1,0 +1,13 @@
+body {
+    background-color: beige;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition-height {
+    transition: height 0.3s ease;
+}
